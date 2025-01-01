@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "aelius5mod",
+	"version": "${version}",
+	"name": "Aelius5 Mod",
+	"description": "My First* mod",
+	"authors": [
+		"Aelius5"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/aelius5mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aelius5.aelius5mod.Aelius5Mod"
+		],
+		"fabric-datagen": [
+			"net.aelius5.aelius5mod.Aelius5ModDataGenerator"
+		],
+		"client": [
+			"net.aelius5.aelius5mod.Aelius5ModClient"
+		]
+	},
+	"mixins": [
+		"aelius5mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
