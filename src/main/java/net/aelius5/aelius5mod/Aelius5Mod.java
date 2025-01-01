@@ -1,5 +1,7 @@
 package net.aelius5.aelius5mod;
 
+import net.aelius5.aelius5mod.block.ModBlocks;
+import net.aelius5.aelius5mod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,7 +14,8 @@ public class Aelius5Mod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
