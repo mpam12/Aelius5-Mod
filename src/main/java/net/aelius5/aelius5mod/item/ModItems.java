@@ -18,10 +18,5 @@ public class ModItems {
 
     public static void registerModItems(){
         Aelius5Mod.LOGGER.info("Registering Mod Items for " + Aelius5Mod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(OBSIDIAN_TABLET_BLANK);
-            entries.add(EMBLAZONED_OBSIDIAN_TABLET);
-        });
     }
 }

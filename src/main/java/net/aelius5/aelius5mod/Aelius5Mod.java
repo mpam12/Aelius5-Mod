@@ -1,6 +1,7 @@
 package net.aelius5.aelius5mod;
 
 import net.aelius5.aelius5mod.block.ModBlocks;
+import net.aelius5.aelius5mod.item.ModItemGroups;
 import net.aelius5.aelius5mod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +17,7 @@ public class Aelius5Mod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
